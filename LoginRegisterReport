@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+{% block title %}Página Título{% endblock %}
+{% block content %}
+    <form method="POST">
+        {{ form.hidden_tag() }}
+        {{ form.csrf_token }}
+        {{ form.nome_usuario.label }} {{ form.nome_usuario() }}<br>
+        {{ form.email.label }} {{ form.email() }}<br>
+        {{ form.senha.label }} {{ form.senha() }}<br>
+        {{ form.confirmar_senha.label }} {{ form.confirmar_senha() }}<br>
+        {{ form.submit() }}
+    </form>
+{% endblock %}
