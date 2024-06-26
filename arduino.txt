@@ -1,0 +1,14 @@
+crime_report_app/
+│
+├── app.py
+├── models.py
+├── forms.py
+├── templates/
+│   ├── layout.html
+│   ├── home.html
+│   ├── login.html
+│   ├── register.html
+│   └── report.html
+├── static/
+│   └── style.css
+└── README.md
