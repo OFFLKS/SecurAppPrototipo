@@ -1,0 +1,31 @@
+Nav {
+    cor de fundo: #333;
+    cor: branco;
+    preenchimento: 10px;
+}
+
+Nav A {
+    cor: branco;
+    Margem: 0 10px;
+    texto-decoração: nenhum;
+}
+
+. recipiente {
+    margem-topo: 20px;
+}
+
+. lampejo {
+    margem: 10px 0;
+    preenchimento: 10px;
+    raio de borda: 5px;
+}
+
+. piscar. êxito {
+    cor de fundo: #4CAF50;
+    cor: branco;
+}
+
+. piscar. perigo {
+    cor de fundo: #f44336;
+    cor: branco;
+}
