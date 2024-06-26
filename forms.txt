@@ -1,0 +1,21 @@
+de flask_wtf importar FlaskForm
+de wtforms importar StringField, PasswordField, SubmitField, FloatField
+de wtforms. validadores importar DataRequired, Length, Email, EqualTo
+
+classe FormularioRegistro(FlaskForm):
+    nome_usuario = StringField('Nome de Usuário', validators=[DataRequired(), Length(min=2, max=20)])
+    email = StringField('Email', validators=[DataRequired(), E-mail()])
+    senha = PasswordField('Senha', validators=[DataRequired()])
+    confirmar_senha = PasswordField('Confirmar Senha', validators=[DataRequired(), EqualTo('senha')])
+    submit = SubmitField('Registrador')
+
+classe FormularioLogin(FlaskForm):
+    email = StringField('Email', validators=[DataRequired(), E-mail()])
+    senha = PasswordField('Senha', validators=[DataRequired()])
+    submit = SubmitField('Login')
+
+classe FormularioReporte(FlaskForm):
+    descrição = StringField('Descrição do Crime', validadores=[DataRequired(), Length(max=200)])
+    latitude = FloatField('Latitude', validadores=[DataRequired()])
+    longitude = FloatField('Longitude', validadores=[DataRequired()])
+    submit = SubmitField('Denunciar Crime')
